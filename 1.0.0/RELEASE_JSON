@@ -1,1 +1,1 @@
-{"k2AgentVersion" : "1.0.0","intcodeAgentPublicTag" : "k2cyber/k2-ic-agent-v1:1.0.0","zerodayAgentPublicTag" : "k2cyber/k2-zd-agent-v1:1.0.0","netsecAgentPublicTag" : "k2cyber/k2-ns-agent-v1:1.0.0"}
+{"k2AgentVersion" : "1.0.0","intcodeAgentInfo" : "k2cyber/k2-ic-agent-v1:1.0.0","zerodayAgentInfo" : "k2cyber/k2-zd-agent-v1:1.0.0","netsecAgentInfo" : "k2cyber/k2-ns-agent-v1:1.0.0"}
