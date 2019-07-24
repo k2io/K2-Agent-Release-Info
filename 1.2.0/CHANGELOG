@@ -1,0 +1,23 @@
+IntCode
+=========
+1. Support for IBM Websphere server.
+2. Support for dynamic attachment of JavaAgent.
+3. Support for listing of all running java web application in scan view.
+4. Non native hooking.
+5. Update communication layer protocol to websocket between IC and JA.
+6. Fix for port number and protocol information for deployed applications.
+7. Support for bypassing osgi frameworks.
+
+Zeroday
+=========
+Fixes :
+	1. Back out entry exit split in bpf driver go to ver4 
+	2. add node name and default id to zday health 
+	3. skip s3 logs on flag
+
+NetSec
+=========
+Fixes :
+	1. Set the ipsec and ike policy same 
+	2. Add skip s3 log files flag 
+	3. Image size optimization
