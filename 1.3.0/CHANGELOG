@@ -1,0 +1,19 @@
+IntCode
+=========
+- Support for SSRF attack detection. 
+
+Zeroday
+=========
+
+- Fix Retry mechanism on http GET/POST
+-  Fix the timeout for pmap incremental readlink failure 
+ - Scan snapshot support
+-  Agent timestamp changes to UTC 
+- Reducing api timeout from 3 min to 2 min
+
+Netsec
+=========
+
+- Fix Retry mechanism on http GET/POST
+- Agent timestamp changes to UTC 
+- Reducing api timeout from 3 min to 2 min
