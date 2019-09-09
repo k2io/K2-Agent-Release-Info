@@ -1,0 +1,16 @@
+- IC Changelog :
+        - Support for Weblogic Server
+        - Support for JBoss Server
+        - Support for HTTP SSRF Complete
+        - Support for Java 9 & above for JavaAgent.
+        - Control Command Mechanism for Language Agents
+- ZD Changelog :
+       - Syscall arguments to event
+       - Send shasum not found in pmap
+       - Parallel processing for incremental pmap
+       - Add default ip for scan
+       - Change command timeout from 120s to 60s
+- NS Changelog :
+       - Do not init chains until auth policy is present for VM case
+       - Change command timeout from 120s to 60s
+
