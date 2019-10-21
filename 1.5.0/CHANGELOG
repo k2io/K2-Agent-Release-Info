@@ -1,0 +1,24 @@
+IntCode
+=======
+- Support for event validation of File I/O along with Integrity Violation.
+- UDS for Postgres DB.
+- NodeJS language protection support. (Alpha)
+- Single agent (image size reduction)
+- Support for JBoss(wildfly) versions 8.x, 9.x and 10.x.
+- Generic Language Agent changes.
+- Attacker IP in each attack incident.
+- Data Posting buffer at IC to enable re-sending of data to cloud. 
+
+Netsec
+======
+1. Add orchestration support for all agents for single agent form factor
+2. Fix upload to s3 bucket flags bug. So that logs are now uploaded to S3.
+
+Zeroday
+=======
+1. Fix upload to s3 bucket flags bug. So that logs are now uploaded to S3.
+2. Remove data in pmaps directory on startup to handle restart agent case
+3. Stop logging req when upload file fails, which was causing junk written to stderr
+4. Put a upper bound limit of 25Mb on files to be upload to k2 could.
+5. Single Agent support.
+6. Fix defer on incremental pmap monitoring.
