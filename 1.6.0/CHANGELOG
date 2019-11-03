@@ -1,0 +1,26 @@
++++++++++++++++++++++++++++++
+MAJOR RELEASE 1.6.0
++++++++++++++++++++++++++++++
+Codename : BabaRoot
++++++++++++++++++++++++++++++
+
+ZD & NS
+===========
+- Report containerId and registry name in event stats
+- Have only netsec report agent logs to S3 instead of both netsec and zday doing it
+- clean up monitor txt periodically once it exceeds 4Mb by sending it to S3
+- fix registry name for sha
+- use repo tags instead of repo digest for scan
+- do not insert k2 hook entryu in iptables if policy is absent
+
+IC
+==========
+- Updated technique to detect RCI , RCE
+- Minimize the scope off XSS up to only DB_COMMANDS
+- Added startedAt time stamp for all running containers.
+- Added registryName for scan and sourceIdentifier JSON
+- Immediate posting of application info to cloud even the server name is not yet detected.
+- Added binaryName in all required JSONs
+- Verify agent stats as well for registry name and application path.
+- Complete HTTP request is posted in Incident to K2Cloud.
+- Support for handling comment structure in SQL & system command. This shall reduce the collateral damage from comments in query : IN-512
