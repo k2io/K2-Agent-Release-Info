@@ -1,0 +1,2 @@
+- Fix for default IP detection in case of multiple default routes. Currently taking the first entry.
+- Updated K8s client version to support upto latest k8s 1.14
