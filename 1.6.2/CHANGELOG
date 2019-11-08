@@ -1,0 +1,3 @@
+IC
+===
+- Default client creation for k8s env supported upto kubernetes version 1.14
