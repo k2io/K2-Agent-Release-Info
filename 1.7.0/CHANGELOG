@@ -1,0 +1,28 @@
+Major Public Release : 1.7.0
++++++++++++++++++++++++
+Codename : Groot
++++++++++++++++++++++++
+IC
+====
+- File Access attack support from Node collector.
+- Application Integrity attack support from Node collector.
+- Under privileged mode support.
+- Fix for FNs in file access (reported in webgoat).
+- Fix for FPs in SQLI Attacks (Multiline commenting structure)
+
+ZD
+====
+- Optimized Image Map support to decouple globalimage maps from pids and use smaller sized supimg map.
+- Fix policy deadlock issue could cause policy storm for zday to k2 cloud.
+- Add default ip to netsec health
+- Add default ip to pmap
+- report open fds in zday health
+- Revert parallel find operation for find on incremental pmap to reduce FD usage.
+
+NS
+====
+- Start ulogd only for non monitored mode, to support non privileged netsec container in monitoring mode.
+- Add single agent upgrade support.
+- Add K2 version to netconn incident
+- Add default ip to netconn incident
+- Add default ip to netsec health
