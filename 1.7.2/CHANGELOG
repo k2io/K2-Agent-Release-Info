@@ -1,0 +1,3 @@
+IC
+=========
+- Bug fix for SSRF in case of self targeted requests by applications.  
