@@ -1,0 +1,44 @@
+IC Change Log
+==============
+
+- Removed the dependency of postgres db instead using embedded nitrite DB.
+- Fix: User value extraction from request body.
+- Introduced interface based hookings
+- Provided support for various vulnerabilities:
+	1. Refected XSS
+	2. NoSQL Injection (mongodb)
+	3. LDAP
+	4. XPath
+	5. Crypto
+	6. Hash
+	7. Random
+	8. TrustBoundary
+	9. Secure Cookie
+	10. Java Deserilization attack detection
+	11. XXE Attack detection
+- Fix: Application detection mechanism
+- Provided support for wide range of SQL DBs and java servers via interface hooking
+- Fix: Algorithm update for stored XSS
+- Primary support for underpriviledged mode.
+- Fix: To avoid collision cases removed rule creation and check
+
+Node agent
+------------
+- Sha256, size calculation at Node agent.
+- Legacy Mongodb driver, mongoose , mquery support
+- Node support for < v8.12 & <v9.6 added runInAsyncScope implementation.
+- Added hook for mongodb eval.
+- Hapi version 17, 18 support
+- Implementation of LRU cache.
+- File fd resolution, bug fixes
+- IC control command for default log and http request log
+- Commandline args escaping fix
+- Minor fix in applicationInfo.
+- Fix for SSRF events, added hooks for _finish.
+- Kareem hook fix
+- Fix for mongoose Query.then
+- Limit on http request body size
+- Application Skip logic update 
+- Fix for socket re-connect failure on initial connection err
+- Nosql IC integration
+- Bug fixing
