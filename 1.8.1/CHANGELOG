@@ -1,0 +1,4 @@
+IC Change Log
+==============
+- Fixes for RCI FPs as reported for V1.8.0
+- Fixes for Path Traversal FNs as reported for V1.8.0.
