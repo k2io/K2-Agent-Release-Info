@@ -1,0 +1,4 @@
+IC 
+=========
+- Fixes for multiple time dynamic attachment of Java Agent.
+- Fixes for Instrumentation issues for pre-loaded classes in case of dynamic attachment in Java Agent.
