@@ -1,0 +1,5 @@
+MAJOR RELEASE 1.8.3
+=====================
+IC
+========
+- Critical bugfix for Java Collector regarding multiple instrumentation of a class leading to hooks getting ineffective.
