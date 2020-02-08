@@ -1,0 +1,17 @@
++----------------------------------------------------+
++ Major K2 Agent Release 1.9.0 (Trinity) +
++----------------------------------------------------+
+IC
+========
+- FTP client integration.
+- Rollover logs upload support.
+- Mount path and log path changes.
+- Under privilege support. Implementation to get IP in case of host, container and k8s case.
+- Application info update and creation of source identifier.
+- IC control command integration, support for upload log, unsupported agent and logger level integration.
+- Implementation to stop instrumentation and event sending in case of Unsupported agent.
+- File inclusion and path traversal partial validation.
+- Event Json update for identifier.
+- Support for application port detection, added http server listen hook.
+- Fix for file event generation for read and write streams.
+- File watcher integration.
