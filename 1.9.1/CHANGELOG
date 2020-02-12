@@ -1,0 +1,17 @@
+-------------------------------------------------------------
+Public Release 1.9.1 (Codename : Trinity II)
+-------------------------------------------------------------
+IC
+=======
+- RXSS FPs fix.
+- Fix for FN reported in File Access.
+- Unsupported Language collector message changed.
+- New field (Identifier) for future usage placed in Incident. For now, the current source identifier is also updated for backward compatibility with K2M.
+- SQL regression bugfix.
+- Support for System.exit hook in Java Collector.
+
+NS & ZD
+=============
+- Address the case where skip ssl and skip verify are both true.Earlier if skip ssl was true, skip verify was not done leading to connection failures
+- Url for handle netsec incident was wrong causing 503 for incident sent when docker was not present, this lead to long timeout which cause the agent installation to fail.
+- Fix passing token accessor in sending incident to cloud on early init failures for netsec
