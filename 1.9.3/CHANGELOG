@@ -1,0 +1,6 @@
+IC Change Log
+=============
+- XSS improvements 
+- Fix for SQLi FP in case of direct usage of date construct.
+- Log Rotate
+- AWS log upload on rotate
