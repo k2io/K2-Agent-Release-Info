@@ -1,0 +1,19 @@
++++++++++++++++++++++++++++++
+PUBLIC RELEASE 1.9.4
++++++++++++++++++++++++++++++
+IC
+----------------
+  - Fixes for XSS detection.
+
+Node Collector:
+-----------------------
+- Health check JSON changes.
+- Support for RXSS.
+- Support for LDAP Injection
+- Support for XPATH Injection
+- Support for SYSTEM_EXIT vulnerability.
+- Support for SetInterval and SetTimeoutHook.
+- Initial support for SSJS and deserialization attack.
+- Fix for Stored XSS.
+- Bug fixes.
+
