@@ -6,7 +6,6 @@ IC
 Mongo support added again (Java Collector)
 Discarding event if generated from K2's internal API. (Java Collector)
 Fix for Deserialisation FP.
-Fix for HSQL FP as reported by Lava in "Undetected attacks - #4" mail.
 Added K2 Protection Mode for blocking attacks from happening.
 Fargate ECS Support
 Added OWASP Vulnerability scanning functionality.
