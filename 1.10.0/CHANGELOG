@@ -1,0 +1,26 @@
+----------------------------------------------------------------------------------------
+Major Release 1.10.0 (Codename : Morpheus)
+----------------------------------------------------------------------------------------
+IC
+=======
+Mongo support added again (Java Collector)
+Discarding event if generated from K2's internal API. (Java Collector)
+Fix for Deserialisation FP.
+Fix for HSQL FP as reported by Lava in "Undetected attacks - #4" mail.
+Added K2 Protection Mode for blocking attacks from happening.
+Fargate ECS Support
+Added OWASP Vulnerability scanning functionality.
+Initial support for new RXSS implementation in Node agent
+New web app detection mechanism for embedded applications in JC.
+New XFF based IP detection & attack blocking mode in place & enable by default. 
+WebGoat 8 issue fix (support for JAva 11)
+LDAP support
+XQuery support
+JS Injection support
+
+Standing issues :
+=================
+- JBoss instrumentations issues (https://k2cyber.atlassian.net/browse/IN-579)
+- An RCI Flagged as RCE (https://k2cyber.atlassian.net/browse/IN-801)
+- XSS Attack on DVJA is not flagged (https://k2cyber.atlassian.net/browse/IN-804)
+- SQL Injection FN in webgoat-7 (https://k2cyber.atlassian.net/browse/IN-808)
