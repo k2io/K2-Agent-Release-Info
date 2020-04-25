@@ -1,0 +1,18 @@
+---------------------------------------------------------------------------------------------------
+Major Public Release 1.10.1 (Codename : Morpheus II)
+---------------------------------------------------------------------------------------------------
+IC
+=================
+- Fix for IN-811.
+- PHP-Collector Alpha release
+- New web app detection mechanism.
+- New user class detection mechanism.
+- Fix for Jboss & Weblogic server families.
+
+Known Issues:
+=================
+- https://k2cyber.atlassian.net/browse/IN-800
+- https://k2cyber.atlassian.net/browse/IN-818
+- https://k2cyber.atlassian.net/browse/IN-820
+- https://k2cyber.atlassian.net/browse/IN-821
+- Issue in XXE-Demo application identification.
