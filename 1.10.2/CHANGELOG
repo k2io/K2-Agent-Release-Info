@@ -1,0 +1,12 @@
+++++++++++++++++++++++++++++++++++++++++++++++++
+Public Release 1.10.2 (Codename : Morpheus III) 
+++++++++++++++++++++++++++++++++++++++++++++++++
+IC
+==============
+- IC code obfuscation.
+- LA toolid replaced with collectorVersion.
+- Fix for SQLi FN : IN-808
+- Podman support from Node & Java LC.
+- Option -DnoObfuscation in mvn command to disable IC code obfuscation.
+- Printing unsupported collector message on web app's STDERR for LC.
+- Fix for IN-821
