@@ -1,0 +1,91 @@
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Major Public Release v1.10.3 (Codename : Morpheus IV)
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+PHP Collector
+=============
+- Added support for XPath, LDAP, Reflected and stored XSS.
+- Resolved memory leaks.
+- Stability for large applications.
+- Performance optimizations
+- Updated logic for FILE_INTEGRITY validation (Added partial validation)
+
+Java Collector
+=============
+- SSRF support revamp.
+
+Node Collector
+================
+Support for mongodb 3.5
+Fix for decoding in RXSS.
+Fix for parameter pollution in RXSS.
+Support for list in query params.
+Support for event generation of require() function calls.
+Minor fix in deserialization attack event generation.
+
+
+
+
+PHP Collector Open issues
+========================
+
+Server Port found incorrect for PHP
+https://k2cyber.atlassian.net/browse/IN-796		
+
+Few fields are wrong in application info
+https://k2cyber.atlassian.net/browse/IN-800		
+
+Events flagged as Cannot_Validate FAILED in case of SSRF attacks for PHP agent
+https://k2cyber.atlassian.net/browse/IN-834
+
+FN case found in the php-vul-web-app demo application for Application Integrity Violation
+https://k2cyber.atlassian.net/browse/IN-838
+
+FN in case of XPATH injection test cases PHP
+https://k2cyber.atlassian.net/browse/IN-842
+
+Multiple Reflected XSS event on single curl PHP MCIR application
+https://k2cyber.atlassian.net/browse/IN-853
+
+Appname not getting resolved
+https://k2cyber.atlassian.net/browse/IN-857
+
+Reflected XSS events found inconsistent
+https://k2cyber.atlassian.net/browse/IN-859
+
+XSS events are inconsistent with Different payload PHP
+https://k2cyber.atlassian.net/browse/IN-860
+
+FN case for Stored XSS (PHP)
+https://k2cyber.atlassian.net/browse/IN-863
+
+FN case for Stored XSS (Wrong SQL query) (MySQL Prepared Statements)
+https://k2cyber.atlassian.net/browse/IN-864
+
+IC unable to mark event as an attack for RCE
+https://k2cyber.atlassian.net/browse/IN-865
+
+Some PASS case of File access marked attack By IC (PHP)
+https://k2cyber.atlassian.net/browse/IN-866
+
+wrong HTTP request body in the event received PHP
+https://k2cyber.atlassian.net/browse/IN-867
+
+Sometimes executed query is wrong in case of XSS (PHP)
+https://k2cyber.atlassian.net/browse/IN-868
+
+segmentation fault issue is ebiz application (CVE-2019-14314)
+https://k2cyber.atlassian.net/browse/IN-870
+
+SSRF attack not detected for PHP
+https://k2cyber.atlassian.net/browse/IN-833
+
+No event is caught by IC for SQL test cases PHP
+https://k2cyber.atlassian.net/browse/IN-843
+
+SQLI using PDO not detected
+https://k2cyber.atlassian.net/browse/IN-847
+
+Reflected XSS case not detected
+https://k2cyber.atlassian.net/browse/IN-854
+
