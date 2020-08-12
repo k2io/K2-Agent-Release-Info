@@ -10,4 +10,4 @@ PHP Collector
 IntCode
 =============
 - Fix for IN-838
-
+- Updated Java version to 1.8.0_265
