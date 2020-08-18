@@ -1,0 +1,36 @@
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Major Public Release v1.10.5 (Codename : Morpheus VI)
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+IC
+============
+- Support for Proxy settings
+- Complete API & IP blocking changes
+- Fixes for file access events
+- Policy & Configuration support
+
+Java Collector
+============
+- Mongo Support revamp for 3.6.x & above.
+- Complete API & IP blocking changes
+- Policy & Configuration support
+
+Node Collector
+============
+- Complete API blocking changes
+- Policy & Configuration support
+
+PHP Collector
+============
+- Fixes for pod id and container id fields for kubernetes case
+- Fix for command line and hostname jira IN-800
+- Logging implemented in separate thread using buffer
+- Fix segmentation fault in multiple application
+- Fix multiple reflected xss issues
+- Fix jira IN-865 event not generated right for multipart data
+- Resolve major memory leaks
+- Update url decoder function
+- Resolve xpath issue marked as db command
+- Handle case when same method can be used for different event categories
+- Prepared sql queries are not supported at all
+
+
