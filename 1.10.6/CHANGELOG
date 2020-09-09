@@ -1,0 +1,64 @@
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Major Public Release v1.10.6 (Codename : Morpheus VII)
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+IntCode
+-------------
+- SQLITE support
+- Add required fields for language and framework in all JSONs
+- Initial beta Support for Dot Net
+- Initial beta Support for Ruby
+- Fix for XPath issue: IN-985
+
+
+JavaAgent
+------------------
+- Add language and framework fields in all JSONs
+
+
+Node
+----------
+1. IP blocking integration
+2. CVE scan service integration
+3. Minor bug fixes.
+4. Stacktrace optimization
+
+
+PHP
+-------
+Bug Fixes: Memory leak and Segmentation fault
+
+
+Ruby
+---------
+- Ruby 2.6 support, Rails 6.0 support
+- Server support
+ Puma
+ Phusion Passenger - Standalone mode
+ Phusion Passenger - Nginx integration mode
+- Vulnerability support:
+ RCE
+ SQLI (SQLITE3, MYSQL2)
+ File access
+ File integrity
+ SSRF
+ Xpath
+ LDAP
+- Supported deployment modes:
+ Host mode
+ container mode
+ EKS
+ ECS
+
+
+Dot Net
+------------
+Attacks Supported - RCE, SQLI(MSSQL), RXSS, SXSS, XPATH, FILE ACCESS, FILE INTEGRITY, SSRF
+
+
+Open Issues Windows Profiler
+---------------------------------------
+Application attachment with restarting agent service in Windows [IN-990]
+NodeIP blank on K2Manager and StackTrace inconsistent infrequently [IN-992, IN-993]
+Empty fields of attack event json [IN-991]
+Buffer Too Small [IN-994]
