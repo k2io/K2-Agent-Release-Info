@@ -8,14 +8,12 @@ IntCode
 - Minor updates & fixes to SSRF event validation. Now ignoring events targeted on self application.
 - Support for IC welcome message.
 - Minor changes to logging framework.
-
 Java
 ---------
 - Welcome message integration
 - Support for complete stack trace
 - Fix for incompatible jc-ic version issue
 - Update mechanism of user class detection in JSP
-
 Node
 ----------
 - ECMA script imports support.
@@ -24,7 +22,6 @@ Node
 - Bug fixes.
 - IC control command integration.
 - Complete stacktrace integration.
-
 PHP
 -------
 - Fixes for event and application info field values.
@@ -35,7 +32,6 @@ PHP
 - Addition of api id to events.
 - Resolve issue of application showing stopped in UI
 - Resolve issue of control command log level not effective on new log file
-
 Ruby
 ---------
 - Event Id introduced in events
@@ -49,14 +45,15 @@ Ruby
 
 Dot Net
 ------------
+Profiler longevity crash fix
 Invalid method name (IN-1023)
 Profiler crashed when testing connection disconnection fix(IN-1012)
 Fix logging in insertAppInfo(IN-1001)
 Warnings/Errors in installer (IN-1024)
 Add Permissions to IIS application host config during installation(IN-1013)
-Attachements logs showing Twice(IN-1018)
+Attachments logs showing Twice(IN-1018)
 Installer Minor changes and Fix(IN-1028)
-Application attachement with restarting agent service on windows(IN-990)
+Application attachment with restarting agent service on windows(IN-990)
 Connected and disconnected processes in windows(IN-981)
 Profiler crash (IN-1026)
 Incorrect stack trace (IN-993)
