@@ -8,6 +8,7 @@ IntCode
 - Minor updates & fixes to SSRF event validation. Now ignoring events targeted on self application.
 - Support for IC welcome message.
 - Minor changes to logging framework.
+- K2Cloud cert updated.
 Java
 ---------
 - Welcome message integration
