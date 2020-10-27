@@ -1,0 +1,87 @@
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Major Release 1.10.8 (Codename : Morpheus IX)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+IC
+==========
+- Support for HTTP request stats.
+- Changes to Agent Config. Policy Pull flag now in Agent Config.
+- Changes to Agent Policy. Static scanning now has cveDefinitionUpdateInterval defined in minutes.
+- Logging changes in K8s module.
+- Changed SQLite lexer to ANTLR official.
+- Fix for FP found at ModelN & Cadance : IncidentId: b6b76aa8-fdd0-11ea-8463-0b554a488b74afcb3fb5-c08e-4ae9-8b3f-b5c08e6ae928160201274568
+- SQLI FP fix due to incorrect user val filtering.
+- Support for SQLITE in Node.
+- Support for MYSQL, MSSQL and SQLITE for Windows Collector.
+- POJO update for CVE scan result. Include kind & id field.
+- CVIS codebase integrated.
+- Full support for windows CVE service package. K2M APIs integrated.
+- New Arch for CVE scanning
+
+
+JC
+========
+- ULC hook support for :
+    - Spark
+    - Apache Wicket
+    - Servlet with annotations.
+   - Spring MVC
+   - JAX-RS Reference Spec
+   - JSP
+- Annotation hooks enabled.
+- Backported File.list hook to this build
+- CVE process timeout of 10 mins, should not execute for more than 10 mins.
+- Changes to CVE scanning module. Removed ScanComponentData posting.
+- Added kind & id field to input.yaml to CVE service. This will denote the deployment env(container, pod etc) & its id (container id , pod id etc).
+- New arch for IAST hooks.
+
+Note :
+ULC hooks allow us to hook some known locations in User code layer for the purpose of gathering telemetry data of incident.
+This increases the accuracy of the following:
+- User Class detail in Incident for RXSS.
+- Web Application detection.
+- Static scanning coverage as it depends on correct scan path provided by Web Application detection.
+
+
+Ruby
+=====
+- Added aggressive filters for open and user stack frame not found scenarios
+- Performance optimisations
+- Added http requests stats in health check
+- Added missing fields in app info json
+- Refactored RXSS functionality
+- CVE scan support
+- Phusion passenger apache integration mode support
+- Deserialization support for Marshal library.
+
+
+Node
+=====
+- CVE scan changes. timeout of 10 mins.
+- Removed scanComponent data posting.
+- SQLITE3 integration.
+- Performance optimizatin.
+- HTTP request stats in HC.
+- Streams error handling.
+- Filtered out pragma queries for SQLITE3
+
+
+PHP
+========
+- Fixes for memory leak.
+- Add debug byte for zend memory allocation for permanent and non permanent memory.
+- Add capability to send HTTP requests count in application healthcheck.
+- Add api blocking support.
+- Upgrade receive buffer size for websocket client.
+
+
+Windows
+========
+- Deserialization Attack support
+- MySql Database Support
+- Query Param Fix
+- Http Stats Support
+- Fix dll and size issue for main application.
+- Multiple bug fixes.
+- CVE Scan Integration
+- IC Control command changes
