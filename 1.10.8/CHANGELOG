@@ -34,6 +34,7 @@ JC
 - Changes to CVE scanning module. Removed ScanComponentData posting.
 - Added kind & id field to input.yaml to CVE service. This will denote the deployment env(container, pod etc) & its id (container id , pod id etc).
 - New arch for IAST hooks.
+- Instrumentation fixes for IAST hooks.
 
 Note :
 ULC hooks allow us to hook some known locations in User code layer for the purpose of gathering telemetry data of incident.
@@ -85,3 +86,7 @@ Windows
 - Multiple bug fixes.
 - CVE Scan Integration
 - IC Control command changes
+- start cvescan in new process
+- No more application freezing
+- Zero memory overhead due to CVE scan
+- Control command null checks at agent side
