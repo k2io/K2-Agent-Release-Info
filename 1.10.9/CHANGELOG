@@ -1,0 +1,60 @@
+++++++++++++++++++++++++++++++++++++++++++++
+Major Public Release 1.10.9 (Codename : Morpheus X)
+++++++++++++++++++++++++++++++++++++++++++++
+
+Int Code
+--------------
+- Fix for multiple deployed application in PHP.
+- CVIS changes:
+   - Added host to json.
+   - Added more fields like cpu stats to container json.
+   - Added Ip address in all the env jsons.
+- Added policy version & policy group in all communication jsons.
+- Removed K8s pod monitoring & container monitoring.
+- Removed agent stats posting.
+- secure password for FTP server.
+- Fix for RCI issue in Ruby Collector
+- Fix for XPATH FP faced at Modeln.
+
+
+JC
+--------
+- CVE service fallback mechanism. In case the tar bundle with collector gets corrupted, it will retry to get correct bundle for 3 times.
+- Fixes in CVE service module.
+
+
+Node
+--------
+- FS module promise API hooks.
+- Node 14 support.
+- Mysql hooks update.
+- Blocking enhancement for FS module.
+
+
+.NET
+------
+- Mongdb Support
+- Fix the longevity crash by changing request header hook for 3.1
+- Add method type support with a new hook for 3.1 framework.
+- Add support for ENV CVE Scan
+- Add support for starting CVE Scan in New Process(Memory Usage Improvement)
+- Fix for Application freeze issue.
+
+
+Ruby
+--------
+- PostgreSQL support
+- New implementation for Instance_eval hooks
+- Amazon Aurora(Mysql and PostgreSQL) support
+- Handling for ASCII encoded data in http request
+- Skip agent attachment for rake command
+- CVE scan service fixes,
+- FTP locking for log transfer
+- Fix for puma worker instance restart
+- New implementation for agent initialization 
+
+
+PHP
+----
+- Support for cve scan service.
+- Fixes for handling multiple virtual host on apache server.
