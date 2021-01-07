@@ -3,7 +3,74 @@ Major Public Release 1.10.10 (Codename : Morpheus XI)
 ++++++++++++++++++++++++++++++++++++++++++++
 
 IntCode
------------
-- Blackops
-- Updated validation architecture
+===========
+- Dynamic Scanning [NEW]
+    - Added new configuration for agent.policy :
+            dynamicScanning:
+              enabled: true
+              reportGenerationInterval: 1
+              reportServerEnable: true
+              reportServerPort: 54324 
+              probing:
+               interval: 1
+               batchSize: 20
+    - Request fuzzing module.
+    - Report Generation module.
+    - Request Processing module.
+    - Added various new control commands.
+    - Functionality to process only those event for DS with unique id based on API ID & request hash.
+- Updates to event processing pipeline :
+    - Updated user value extraction module. [COMPLETE REVAMP]
+    - Updated validation pipeline for feedback to DS module.
+    - Completely removed rule based validation leftovers from SQL & SYSTEM_COMMAND validation.
+- Fixes :
+    - JS Injection validation algo updated.
+    - XQuery/XPath corner case covered.
+    - SSRF : added X-Forwarded header to whitelist.
+    - Heap memory leak due to DS module.
+    - NoSQL injection reported by Lava : Issue in keys processing with spaces.
+    - Windows File Operation validation : LowerCase drive name added to absolute path regex.
 
+Java Collector
+================
+- Dynamic Scanning [NEW]
+    - Implemented handling for newly incorporated control commands.
+    - Added new REST client to fire fuzzed requests.
+    - Started sending all the RXSS events without filtering.
+    - Cleanup of required files after fuzz.
+    
+    
+- Fixes :
+    - Parameter Map handling updated: Moved to hook based approach.
+    - Checks for CVE service fail counts & rate limiting.
+    - JBoss server issue : Due to ClassNotFound Exception : Added fallback search in bootstrap classloader.
+    - Required Stacktrace : Fixed corner issue.
+    - ClassCircularity Error fixed by correct locking in ClassLoadListener.
+
+Ruby Collector
+===============
+- Updated RCI detection mechanism to use stack trace parsing.
+- Code Refactoring
+- Rails 4.x support
+- Fixes:
+  - Fix for EM.epoll check
+  - Fix for CVE scan
+  - Fix for SQLite Query Attribute.
+  - Fix for reflected XSS.
+  - Fix for app info generation sequence.
+  - Fix for unsupported LC
+  - Fix for http request body parsing.
+  - Fix for application size calculation regression.
+
+Node Collector
+================
+1. Worker threads implementaion.
+2. Application port detection fix.
+3. Updated mechanism to getHostname.
+4. False postive fix for RXSS.
+5. Minor bug fixes.
+
+PHP Collector
+================
+- Updates for ip blocking
+- Resolve issue with curl based ssrf
