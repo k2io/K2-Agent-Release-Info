@@ -1,3 +1,45 @@
 ++++++++++++++++++++++++++++++++++++++++++++
 Major Public Release 1.10.11 (Codename : Morpheus XII)
 ++++++++++++++++++++++++++++++++++++++++++++
+
+IntCode
+==========
+- Fix for OutOfMemory error in DS module
+- SXSS fix for ruby collector
+- Fix for url-decoding in headers
+- Update handling for IP address detection in windows
+
+Java Collector
+----------------
+- Fix for handling of PrintWriter Hooks
+
+Node Collector
+----------------
+- BlackOps integration.
+- RouteMap implementaion for Express, Koa and Hapi frameworks.
+- Implementationf for Import function hooking
+- Implementation to detect network calls inside eval.
+- Minor bug fixes
+
+Ruby Collector
+---------------
+- Handling for Kernel.open
+- Support for inbound and outbound http connections in healthcheck
+- Fixes:
+ - Fix for file type in request data
+ - Fix for event filtering due to stack frame not found
+ - Fix for Integer and String data types in Sqlite3 and Pg hooks
+- Support for api calls under thread for same http request
+
+Windows Collector
+-------------------
+- Outgoing Http Request Support
+- XXE support
+- Longevity Crash fix
+- Reporting the right protected databases in health check
+- Report Debug  (proprietory) method for windows visual studio attachment
+- SSRF invalid parameter handling fix
+- invalid nodeIP
+- Attachment issue fix
+
+
