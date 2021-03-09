@@ -1,0 +1,52 @@
+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Major Public Release 1.10.13 (Codename : Morpheus IV)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Int Code
+==========
+
+- Bug fix in dynamic scanning : resetting of K2RequestIdentifier in case of new APIRecord creation.
+- Major regression fix for XPATH & SQLI : Removed conditional for having alphanumeric boundary for user input.
+- Issue fix for intermediate state of Agent Policy.
+- DS reporting changes: added sidepanel for displaying the required additional information
+- Fix for improper shutdown of report server
+- Added handling for API based topology via HC.
+
+Java
+====
+- Added handling for http connections stat cache for every 2 hrs
+- Removed partial event validation in case of BO
+- Added handling for API based topology via HC.
+
+Node
+====
+- Support for Application topology view.
+- Disable partial validation in case of dynamic scan.
+- Handling to get application metadata i.e all the third party dependencies used by application.
+- Handling to remove query param in In/out bound HTTP connections.
+- Fix in routeMap implementation, Removed dynamic data from URL while calculating traceId to avoid multiple traceId creation.
+- Fix for null in destination Ip
+- Minor fixes.
+
+PHP
+====
+- Free memory of header list.
+
+Ruby
+=====
+- Blackops support
+- Sinatra framework support
+- WEBrick server support
+- Application Topology support
+- Fixes:
+	- Fix for Kernel.open hook
+	- Fix for control command #100 handling
+
+Windows
+========
+- url and self ip fix for api connections
+- fix additional “/” in url reporting 
+- Having root “/” for empty urls
+- usermethodname fix
+- protectedServer fix
+
