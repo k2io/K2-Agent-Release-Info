@@ -1,0 +1,39 @@
+Java
+=====
+Fixes
+-----
+- Updates HTTP Connection stats reporting
+- Resolve duplicate posting of same inbound-outbound request.
+
+IntCode
+==========
+Fixes
+------
+- RCE FP: updates command parser to improve separators.
+- Dynamic stats graph is back to 24 hr instead of 48 hrs
+- Minor patch in SYSTEM COMMAND event validation
+- Minor patch in API record data posting on cloud.
+
+New Features
+--------------
+- Request Whitelisting policy: Specific request can also be marked as whitelist similar to API whitelisting.
+- Impacting keys and payloads are also provided in attack incidents.
+- For PHP collector extra field of cwd is introduced in file events
+- Buffer for pending events till IC process application info
+
+Ruby Change log (1.10.16)
+=================
+- Blocking support
+- Ruby 3.0 support
+
+Node Agent
+==========
+- Fix garbage collection of contextMap
+
+PHP Agent 
+=========
+- No Changes 
+
+Dot Net Agent
+=============
+- No Changes
