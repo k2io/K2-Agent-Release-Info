@@ -1,0 +1,4 @@
+IC Change Log:
+1. New support and policy for saving scan results locally.
+2. Update in SSRF validation algo (fix for issue raised at cadence)
+3. DS support for multi-process environment
