@@ -1,4 +1,5 @@
-IC Change Log:
-1. New support and policy for saving scan results locally.
-2. Update in SSRF validation algo (fix for issue raised at cadence)
-3. DS support for multi-process environment
+Public Major Release 1.10.17
+=======================
+
+Change Log:
+- Netsec Fix for port number in k2url  env variable for onprem install
