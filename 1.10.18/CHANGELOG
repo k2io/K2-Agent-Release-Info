@@ -1,0 +1,58 @@
+IntCode
+========
+	
+- Added Python collector's bundling
+- Support for non sudo non docker installation
+- Various utility updates
+
+Java 
+=====
+
+- Fix for application crash with jboss EAP 6.4
+
+PHP 
+====
+
+— PHP 5 and PHP 8 is also supported now
+— Newly added supported versions of PHP : 5.4, 5.5, 5.6 & 8.0
+— For backward compatibility, resource identifier has been changed used in case of prepared queries
+— Add timeout for blackops request
+— Support for procedural Postgres db for all php versions
+— Support for procedural Mssql db for php 7 & above
+— Fix for issue in loading collector where the installation is done multiple times
+— Apache mpms event and worker are also supported when used with PHP-FPM (NTS mode)
+
+Python 
+=======
+1. Initial Version Of Python collector.
+2. Support of SQLI(Mysql), File Access, Path Traversal, File Integrity, RCE, SSRF, LDAP, NOSQLI(Mongo), SXSS, RXSS
+3. BlackOps integration.
+
+Node 
+=====
+1. Minor Fix in API blocking
+
+RUBY 
+=======
+- Removed Deserialisation hooks, used stack parsing for Deserialisation detection
+- File hooks rewrite
+- Added support for system command library PTY 
+- Added support for dynamically loaded libraries
+- Removed delay_init to minimise the initialisation time
+- Removed redundant pre_hook calls
+- Added K2_DISABLE feature
+
+Fixes:
+- fix for empty nodeid in cve scan data
+- fixes in reinstalltion of changed version of agent in non dev mode 
+- fixes for cve scanning running even on non compatible agent 
+- fixes for event not generated in few cases for rails postgresql & sqlite3 adpater
+- fixes in event data for open system call
+
+Netsec 
+============
+- go mod support
+- Updated Go version from 1.11 to 1.16.5
+- Fixed issue for K2 address bypass in iptable chains
+- Fix for event buffer overflow issue in supervisorctl
+- Sudo less installation support for netsec agent
