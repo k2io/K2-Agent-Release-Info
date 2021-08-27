@@ -1,0 +1,38 @@
+IntCode
+=========
+
+- Support for grpc content
+- Dynamic scan to be run per application process based
+- Update fuzz fail event
+
+JavaAgent
+===========
+
+- Improved RXSS validation algorithm to minimize FPs
+- Update fuzz fail event
+
+PHP 
+====
+
+- applicationUUID in fuzz fail event.
+- memory leak fixes
+- support in blackops for file based fuzz requests
+
+Node
+=====
+
+- applicationUUID in fuzz fail event.
+
+Python 
+========
+
+- applicationUUID in fuzz fail event.
+- SQLITE3 support
+- Postgres support
+- Minor fixes
+
+Ruby 
+=====
+
+- applicationUUID in fuzz fail event.
+- Fix for high cpu usage
