@@ -1,3 +1,23 @@
+Major Public Release 1.10.20
+-----------------------------------
+IntCode
+========
+- Major DS fixes.
+- DB cleanup per day & on application exit(delayed by 10-15 mins).
+- Usage of DB to avoid dropping of APIRecords in case of high load.
+- Backward and forward compatibility between IC and LA
+- Version bump for NitriteDB update to 3.4.3
+JavaAgent
+==========
+- Jboss server family patches.
+- Minor Patches for DS
+Ruby
+=====
+- Ruby event size limit to 2mb
+PHP
+====
+- Change reconnect timeout to 5 minutes for ws client
+
 NetSec
 ========
 
