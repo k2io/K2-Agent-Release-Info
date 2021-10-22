@@ -1,0 +1,19 @@
+Major Public Release 1.10.21
+-----------------------------------
+
+
+Java
+=======
+- JC graceful shutdown fixes.
+- JC to add permission for all users on /tmp/k2logs
+
+PHP
+======
+- Support for oracle db using oci extension
+- Support for odbc based methods
+- Support for remaining mysqli functions and bug fixes
+
+Python
+===========
+- Fallback ws connection in django hook.
+- Minor fixes.
