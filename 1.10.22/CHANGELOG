@@ -1,0 +1,8 @@
+Major Public Release 1.10.22
+-----------------------------------
+
+Java
+=======
+- Fix for transformation errors with jetty 9.4.14 raised on Domino's
+- Introduce ENV var K2_SERVICE_NAME to provide custom application name to be displaced on k2 portal
+- Fix for fuzz request processing
