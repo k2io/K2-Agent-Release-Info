@@ -1,0 +1,16 @@
+Major Public Release 1.10.26
+-----------------------------------
+
+IC
+-----
+- Implementation for user data translation layer.
+
+JC
+-----
+- Improved templating support for log4j.
+
+MongoDB changes for all LCs : SXSS improvements.
+
+Ruby:
+--------
+- Logging improvements
