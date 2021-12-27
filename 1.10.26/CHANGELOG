@@ -4,6 +4,7 @@ Major Public Release 1.10.26
 IC
 -----
 - Implementation for user data translation layer.
+- Fixes in CVE service regarding collision due to common dir.
 
 JC
 -----
