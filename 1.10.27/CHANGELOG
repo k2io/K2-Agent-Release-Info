@@ -1,0 +1,3 @@
+Major Public Release 1.10.27
+========================
+ Introduce JC Web Socket reconnect retries on startup for 30 Mins
