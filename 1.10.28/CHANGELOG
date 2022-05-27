@@ -1,4 +1,7 @@
 Major Public Release 1.10.28
 =========================
+
 - ModelN issue fixes
 - JC transformation improvements
+- Custom CA cert handling for IC & Segment docker case.
+- Node LC : support for pg-pool, pg-cursor hooks.
