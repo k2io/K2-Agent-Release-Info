@@ -1,0 +1,6 @@
+- Implementation for self cleanup of service extraction dir
+- Remove local CVE service tar after extraction
+- Node: Fix for IN-2332
+- Setup cve tar for port only for parent process
+- At least 30sec gap between two consecutive runs of CVE scan
+- Update AWS key and token
