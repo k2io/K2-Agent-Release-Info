@@ -1,6 +1,18 @@
-- Implementation for self cleanup of service extraction dir
-- Remove local CVE service tar after extraction
-- Node: Fix for IN-2332
-- Setup cve tar for port only for parent process
-- At least 30sec gap between two consecutive runs of CVE scan
-- Update AWS key and token
+Major Public Release 1.10.29
+======================
+
+- Trimmed docker image size
+- Complete removal of CVE service from IC.
+- Integrated Dependency Track
+- Yguard changes
+- Latest JC with security updates.
+- Security updates in IC
+- Security fixes for apache fit-server
+- Added PHP additional artefacts to FTP dir
+- Regression fix in RestClient
+- Includes NOTICE file
+- Removed DNC collector
+- JC NOTICE file encoding fixed.
+- Correct placement for NOTICE and LICENSE inside container and non-docker bundle
+- Python LGPL2.1 License issue fix
+- Fix for ecs and nodeid fetch
